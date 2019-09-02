@@ -263,6 +263,18 @@ module.exports = {
     },
     alias: undefined,
   },
+  botbuilderlg: {
+    entry: [
+      'vs/language/botbuilder-lg/monaco.contribution',
+    ],
+    worker: {
+      id: 'vs/language/botbuilder-lg/lgWorker',
+      entry: 'vs/language/botbuilder-lg/lg.worker',
+      output: 'botbuilderlg.worker.js',
+      fallback: 'vs/language/botbuilder-lg/lgWorker',
+    },
+    alias: undefined,
+  },
   vb: {
     entry: 'vs/basic-languages/vb/vb.contribution',
     worker: undefined,
